@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sevak Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-gray-100">
+
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-50 ">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+
+
+        <!-- Logo Right -->
+      <div class="flex items-center space-x-2">
+        <img src="Sevak_Academy_Logo.png" alt="logo" class="max-h-20 max-w-40 object-contain p-2">
+      </div>
+      
+      <!-- Menu Left -->
+      <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-green-600 transition">Home</a>
+        <a href="#syllabuspage" class="hover:text-green-600 transition">Syllabus</a>
+        <a href="mathvideo.html" class="hover:text-green-600 transition">Notes</a>
+        <a href="mathvideo.html" class="hover:text-green-600 transition">MCQs</a>
+        <a href="mathvideo.html" class="hover:text-green-600 transition">Quizzes</a>
+        <a href="#practicepapers" class="hover:text-green-600 transition">Practice Papers</a>
+        <a href="mathvideo.html" class="hover:text-green-600 transition">Video Lectures</a>
+      </nav>
+
+      
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+    <a href="#homepage" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+    <a href="mathvideo.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Video Lectures</a>
+    <a href="mathvideo.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Notes</a>
+    <a href="#practicepapers" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Practice Papers</a>
+  </div>
+</header>
+
+
+<!-- home page section -->
+
+<!-- HERO SECTION -->
+<section id="homepage" class="max-w-7xl mx-auto px-6 py-16">
+  <div class="flex flex-col md:flex-row items-center gap-12">
+
+    <!-- Left Image Slider -->
+    <div class="md:w-1/2 flex justify-center mt-8">
+      <img id="heroImage"
+        src="javacourse.png"
+        alt="Course Promotion"
+        class="w-72 md:w-96 max-h-80 rounded-2xl shadow-2xl transition-opacity duration-700">
+    </div>
+
+    <!-- Right Content -->
+    <div class="md:w-1/2 text-center md:text-left mt-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+        Hello Everyone, <br>
+        I'm <span class="text-green-600">Sevak Patel</span>
+      </h1>
+    </div>
+
+  </div>
+</section>
+
+<!-- syllabus section -->
+
+<section id="syllabuspage" class="max-w-6xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
+
+  <!-- Header -->
+  <div class="bg-blue-600 text-white p-6 text-center">
+    <h1 class="text-2xl font-bold">Mathematics Syllabus</h1>
+    <p>2nd Semester</p>
+  </div>
+
+  <!-- Table -->
+   <div class="overflow-x-auto">
+      <table  class="min-w-full border-collapse">
+
+        <!-- UNIT 1 -->
+        <tr class="border-b align-top">
+          <td class="w-20 text-center font-bold text-xl border-r p-6">
+          UNIT  1
+          </td>
+
+          <td class="border-r p-6">
+            <p> Propositions ,Logical Operations (basic connectives),Compound Statements,Construction of Truth Table,Quantifiers,Conditional Statements,Tautology,Contradiction,Contingency,Logical Equivalence,CNF & DNF,Rules of Inference,Modus Ponens,Modus Tollens,Syllogism,Proof by Contradiction,Mathematical Induction. </p>
+
+            <!-- Short Notes -->
+            <div id="note1" class="hidden mt-4 bg-gray-50 p-4 rounded-lg text-sm text-gray-700">
+              <strong>Quick Revision:</strong><br>
+              <p>
+                <span class="text-2xl font-bold text-orange-500">1. Propositions</span>  A proposition is a declarative statement that is either True (T) or False (F) but not both.
+                * Example: 2+2=4 (T)
+                Questions and commands are not propositions. <br> <br>  <span class="text-2xl font-bold text-orange-500">2. Logical Operations (Basic Connectives)</span> ¬p → Negation (Not p)
+                p ∧ q → Conjunction (AND)
+                p V q → Disjunction (OR)
+                p → q → Implication (If p then q)
+                p ↔ q → Biconditional (If and only if)
+                * Key Point:
+                AND → True only when both True
+                OR → False only when both False <br><br> <span class="text-2xl font-bold text-orange-500">3. Compound Statements</span> Formed by combining simple propositions using logical connectives.
+                *Example: (p ∧ q), (p → q), (¬p V q)  <br><br> <span class="text-2xl font-bold text-orange-500">4. Construction of Truth Table</span> Steps:
+                  1. Count number of variables (n). <br>
+                  2. Total rows = 2ⁿ. <br>
+                  3. Fill combinations of T and F. <br>
+                  4. Apply logical operations step by step. <br>
+                  * Important: Always solve inside brackets first. <br><br> <span class="text-2xl font-bold text-orange-500">5. Quantifiers</span> Used in predicate logic. <br>
+                  ∀ → For all <br>
+                  ∃ → There exists <br>
+                  Example:
+                  ∀x (x² ≥ 0) → True
+                  ∃x (x² = 4) → True <br>
+                  Negation Rules:
+                  ¬(∀x P(x)) = ∃x ¬P(x)
+                  ¬(∃x P(x)) = ∀x ¬P(x) <br><br> <span class="text-2xl font-bold text-orange-500">6. Conditional Statements</span>  p → q (If p then q) <br>
+                  Only False when:
+                  p = True and q = False <br>
+                  Related Forms:
+                  . Converse → q → p
+                  . Inverse → ¬p → ¬q
+                  . Contrapositive → ¬q → ¬p (Logically Equivalent to original) <br> <br> <span class="text-2xl font-bold text-orange-500">7. Tautology</span> A statement always True. <br>
+                  * Example: p V ¬p <br><br>  <span class="text-2xl font-bold text-orange-500">8. Contradiction</span> A statement that is always False. <br> * Example: p ∧ ¬p <br><br> <span class="text-2xl font-bold text-orange-500">9. Contingency</span> Sometimes True, Sometimes False.
+                  Most logical statements fall under this. <br> <br> <span class="text-2xl font-bold text-orange-500">10. Logical Equivalence</span> Two statements are logically equivalent if their truth tables are identical. <br>
+                  Notation: p ≡ q  <br>
+                  Important Laws: 
+                  Identity Law ,
+                  Domination Law ,
+                  Idempotent Law ,
+                  Double Negation ,
+                  De Morgan's Laws ,
+                  Implication Law <br>
+                  * Example:
+                  p → q ≡ ¬p V q  <br> <br> <span class="text-2xl font-bold text-orange-500">11. CNF & DNF</span> DNF (Disjunctive Normal Form): OR of AND terms <br>
+                  CNF (Conjunctive Normal Form): AND of OR terms Used in digital logic and simplification. <br><br> <span class="text-2xl font-bold text-orange-500">12. Rules of Inference</span> Used to derive conclusions logically. <br>
+                  Common Rules: 
+                  Modus Ponens ,
+                  Modus Tollens , 
+                  Hypothetical Syllogism ,
+                  Disjunctive Syllogism <br><br> <span class="text-2xl font-bold text-orange-500">13. Proof by Contradiction</span> 1. Assume opposite of what you want to prove. <br>
+                  2. Derive contradiction. <br>
+                  3. Therefore original statement is true. <br><br> <span class="text-2xl font-bold text-orange-500">14. Mathematical Induction</span>  Used to prove statements for natural numbers. <br>
+                  Steps: 1. Base Case: Prove for n = 1 (or starting value). <br>
+                  2. Inductive Hypothesis: Assume true for n = k. <br>
+                  3. Inductive Step: Prove true for n = k+1. <br>
+                  4. Conclusion: True for all n ∈ N. <br><br> <b class="font-bold">Thank you ! </b>
+              </p>
+            </div>
+          </td>
+
+          <td class="text-center p-6 space-y-3">
+            <a href="mathvideo.html"
+              class="block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+              Video
+            </a>
+
+            <button onclick="toggleNote('note1')"
+              class="block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+              Short Revision
+            </button>
+          </td>
+        </tr>
+
+        <!-- UNIT 2 -->
+        <tr class="border-b align-top">
+          <td class="text-center font-bold text-xl border-r p-6">
+            UNIT  2
+          </td>
+
+          <td class="border-r p-6">
+            <p>Semi-group, Monoid, Group, Subgroup, Cyclic Group</p>
+
+            <div id="note2" class="hidden mt-4 bg-gray-50 p-4 rounded-lg text-sm text-gray-700">
+              <strong>Quick Revision:</strong><br>
+              Group is a set with binary operation.<br>
+              It must satisfy closure, associativity, identity, inverse.
+            </div>
+          </td>
+
+          <td class="text-center p-6 space-y-3">
+            <a href="mathvideo.html"
+              class="block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+              Video
+            </a>
+
+            <button onclick="toggleNote('note2')"
+              class="block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+              Short Revision
+            </button>
+          </td>
+        </tr>
+
+        <!-- UNIT 3 -->
+        <tr class="align-top">
+          <td class="text-center font-bold text-xl border-r p-6">
+          UNIT  3
+          </td>
+
+          <td class="border-r p-6">
+          <p>pics: Errors in Numerical Methods,Bisection Method,Newton-Raphson Method,Interpolation,Newton's Forward & Backward Formula,Lagrange Formula,Numerical Integration: Trapezoidal Rule & Simpson's 1/3 Rule</p>
+
+            <div id="note3" class="hidden mt-4 bg-gray-50 p-4 rounded-lg text-sm text-gray-700">
+              <strong>Quick Revision:</strong><br>
+              Bisection method finds root by dividing interval.<br>
+              Newton-Raphson uses derivative formula.<br>
+              Trapezoidal and Simpson’s rule are integration techniques.
+            </div>
+          </td>
+
+          <td class="text-center p-6 space-y-3">
+            <a href="mathvideo.html"
+              class="block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+              Video
+            </a>
+
+            <button onclick="toggleNote('note3')"
+              class="block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+              Short Revision
+            </button>
+          </td>
+        </tr>
+
+      </table>
+    </div>  
+
+</section>
+
+
+<!-- footer section & contact section -->
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 pt-12 pb-6 px-6 mt-8">
+
+  <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-4">
+
+    <!-- About -->
+    <div>
+      <h2 class="text-2xl font-bold text-green-400 mb-4">Sevak Academy</h2>
+      <p class="text-sm leading-relaxed">
+        Sevak Academy is an educational platform specially designed for BCA students.
+        We provide structured notes, quizzes, coding practice, and video lectures 
+        based on AICTE guidelines.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#homepage" class="hover:text-green-400 transition">Home</a></li>
+        <li><a href="#maths" class="hover:text-green-400 transition">Maths</a></li>
+        <li><a href="#coding" class="hover:text-green-400 transition">Coding</a></li>
+        <li><a href="#contactsec" class="hover:text-green-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Courses -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Courses</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Logic Building</li>
+        <li>HTML & CSS</li>
+        <li>Java Programming</li>
+        <li>Data Structures</li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Connect With Me</h3>
+
+      <p class="text-sm mb-2">
+        📧 <a href="mailto:sevakpatel032@gmail.com" class="hover:text-green-400">
+        sevakpatel032@gmail.com</a>
+      </p>
+
+      <p class="text-sm mb-2">
+        📲 <a href="google/form" target="_blank" 
+        class="hover:text-green-400">
+        Ask Doubt </a>
+      </p>
+
+      <p class="text-sm mb-4">
+        👥 <a href="https://chat.whatsapp.com/LFvJVQToMNWKEu3oXmWUC9" target="_blank" 
+        class="hover:text-green-400">
+        Join WhatsApp Group</a>
+      </p>
+
+      <!-- Social Links -->
+      <div class="flex space-x-4 mt-4">
+
+        <a href="https://www.linkedin.com/in/sevak-patel-b311a037a/" target="_blank"
+           class="bg-green-500 px-3 py-2 rounded-lg text-black font-semibold hover:bg-green-400 transition">
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/sevak032" target="_blank"
+           class="bg-green-500 px-3 py-2 rounded-lg text-black font-semibold hover:bg-green-400 transition">
+          GitHub
+        </a>
+
+        <a href="https://youtube.com/@youngthought1?si=enMyNNstgVNwc3py" target="_blank"
+           class="bg-green-500 px-3 py-2 rounded-lg text-black font-semibold hover:bg-green-400 transition">
+          YouTube
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm">
+    © 2026 Sevak Academy. All Rights Reserved.
+  </div>
+
+</footer>
+
+
+
+
+<script>
+
+  // hamburger section
+
+
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const menuLinks = document.querySelectorAll('#mobile-menu a');
+
+  // Toggle Menu
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Close Menu When Any Link is Clicked
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+
+
+   // ===== Multiple Images List =====
+  const images = [
+    "logoimg.png",
+    "javacourse.png",
+    "logicbuilding.png",
+    "mathscourse.png",
+    "htmlcourse.png",
+    "csscourse.png"
+    
+  ];
+
+  let index = 0;
+  const heroImage = document.getElementById("heroImage");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+
+    // Fade Out
+    heroImage.style.opacity = 0;
+
+    setTimeout(() => {
+      heroImage.src = images[index];
+
+      // Fade In
+      heroImage.style.opacity = 1;
+    }, 500);
+
+  }, 2000); // 2000ms = 2 seconds
+
+// short revision section 
+function toggleNote(id) {
+  document.getElementById(id).classList.toggle("hidden");
+}
+
+</script>
+
+</body>
+</html>
